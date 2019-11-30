@@ -1,0 +1,5 @@
+wget https://dl.min.io/client/mc/release/linux-amd64/mc
+mv mc ~/.local/bin
+chmod +x ~/.local/bin
+
+mc config host add s3 http://minio-service.kubeflow:9000 minio minio123 --api S3v4
